@@ -1,17 +1,17 @@
 // Understanding what is going on
 var x = [2,4,6]; // What does this say?  Creating and var called x setting it to an array
-console.log(x); // What will this do?    Log out the value of x
+console.log('var x array: ', x); // What will this do?    Log out the value of x
 
 
 // Index
 var y = [1,3,4];  // Creating a var called y setting it to an array
-console.log(y[0]);  // Logging out the value of y at the 1st index
+console.log('index 0 of var y: ', y[0]);  // Logging out the value of y at the 1st index
 
 // Using index to change the array
 var z = [5,6,9];
-console.log(z);
+console.log('var z array: ', z);
 z[0] = z[2]; // What is this saying?  value of z at 1st index to now = the value of z at the 3rd index
-console.log(z); // What will be printed  
+console.log('changing array z: ', z); // What will be printed  
 
 // .length
 
@@ -22,30 +22,33 @@ var b = a.length; // What is this saying and doing?  var b = the length of the a
 
 var c = ["Hello", "There", "Houston"]; 
 var d = c.length;
-console.log(d); // Why does this print 3 as well?  Because if we think of them as items there are 3 items in the array
+console.log('length of array c: ', d); // Why does this print 3 as well?  Because if we think of them as items there are 3 items in the array
 
 var e = ["Hello", "I", "am", 42];
 var f = e.length;
-console.log(f); // What will this print and why?  There are 4 items in the array so as f is asking for the length it will print 4.  It doesn't matter if they are strings or numbers
-console.log(e); // This will just print the whole array
+console.log('length of array e: ', f); // What will this print and why?  There are 4 items in the array so as f is asking for the length it will print 4.  It doesn't matter if they are strings or numbers
+console.log('array e: ', e); // This will just print the whole array
 
 var g = [1,3,4,5];   // creating a variable g with an array
 var temp = g[g.length-1]; // creating a variable temp and pull out the last index
 g[g.length-1] = g[0]; // make the last index = 1st index
-console.log(g);
+console.log('changing array g: ', g);
 
 var h = [1,3,4,5];
+console.log('array h: ', h)
 h.push(24);  // Add a new index to the end.
-console.log(h); // [1,3,4,5,24]
+console.log('push to array h: ', h); // [1,3,4,5,24]
 
-// h.pop(); // Takes last index off
-console.log(h); // [1,3,4,5]
+h.pop(); // Takes last index off
+console.log('pop from array h:', h); // [1,3,4,5]
 
 h.push(24); // Add 24 to the end
 h.push(8);  // Add 8 to the end
-console.log(h); // [1,3,4,5,24, 8]
+console.log('push 2 to array h:', h); // [1,3,4,5,24, 8]
 h.pop();
-console.log(h);  // [1,3,4,5,24]
+console.log('pop from array h: ', h);  // [1,3,4,5,24]
+
+console.log('using if statements')
 
 var counter = 4; // creating var counter setting = 4
 if(counter < 10) {  // if counter is less than 10
